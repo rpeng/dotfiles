@@ -23,10 +23,10 @@ set mouse=a
 syntax on
 
 "window movement
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
-map <c-h> <c-w>h
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-l> <c-w>l
+noremap <c-h> <c-w>h
 
 "file detection
 filetype indent plugin on
@@ -44,13 +44,13 @@ set ruler
 
 " Mappings
 "restore mouse function
-map <leader>m :set ttymouse=xterm2<cr>
+noremap <leader>m :set ttymouse=xterm2<cr>
 
 "taglist
-map <leader>f :TlistToggle<cr>
+noremap <leader>f :TlistToggle<cr>
 
 "tasklist
-map <leader>l <Plug>TaskList
+noremap <leader>l <Plug>TaskList
 
 let TList_WinWidth=35
 
@@ -76,3 +76,6 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+
+set wildmode=longest:full
+set wildmenu
