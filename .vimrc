@@ -57,6 +57,14 @@ let TList_WinWidth=35
 "pyflakes
 let g:pyflakes_use_quickfix = 0
 
+"pep8
+let g:pep8_map='<leader>8'
+
+"supertab
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
 "hide toolbar for macvim
 if has("gui_running")
 	set guioptions=-t
