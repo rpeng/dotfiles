@@ -54,6 +54,9 @@ map <leader>l <Plug>TaskList
 
 let TList_WinWidth=35
 
+"pyflakes
+let g:pyflakes_use_quickfix = 0
+
 "hide toolbar for macvim
 if has("gui_running")
 	set guioptions=-t
