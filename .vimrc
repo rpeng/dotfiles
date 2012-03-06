@@ -49,6 +49,9 @@ map <leader>m :set ttymouse=xterm2<cr>
 "taglist
 map <leader>f :TlistToggle<cr>
 
+"tasklist
+map <leader>l <Plug>TaskList
+
 let TList_WinWidth=35
 
 "hide toolbar for macvim
