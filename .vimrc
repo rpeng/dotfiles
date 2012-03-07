@@ -36,6 +36,7 @@ color inkpot
 "search options
 set hlsearch    "highlights search
 set incsearch   "searches as you type
+set ignorecase smartcase "by default ignore case
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 "numbers
