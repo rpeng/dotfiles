@@ -38,7 +38,6 @@ set hlsearch    "highlights search
 set incsearch   "searches as you type
 set ignorecase smartcase "by default ignore case
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
 
 "numbers
 set nu!
@@ -53,6 +52,9 @@ noremap <leader>f :TlistToggle<cr>
 
 "tasklist
 noremap <leader>l <Plug>TaskList
+
+"NERDTree
+nnoremap <leader>n :NERDTreeToggle<CR>
 
 let TList_WinWidth=35
 
