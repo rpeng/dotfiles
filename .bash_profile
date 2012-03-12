@@ -19,6 +19,7 @@ export HULU_ENV='dev'
 
 # use MacVim instead of default
 alias vi='mvim -v'
+alias ls='ls -G'
 alias lsal='ls -al'
 
 # allow CTRL-S to work for command-t
