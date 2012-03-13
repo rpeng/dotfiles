@@ -10,7 +10,7 @@ PS1='\[\e[0;35m\]\u@:\[\e[1;36m\]\w\[\e[m\]$(__git_ps1 " (\[\e[1;33m\]%s\[\e[m\]
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
-source /Applications/SourceTree.app/Contents/Resources/git_local/contrib/completion/git-completion.bash
+source ~/workspace/dotfiles/bin/git-completion.bash
 
 export PATH=/Users/richard.peng/workspace/binaries/mongodb-osx-x86_64-2.0.2/bin:$PATH
 
