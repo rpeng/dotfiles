@@ -76,6 +76,9 @@ if has("gui_running")
 	set guioptions=-t
 endif
 
+" highlight trailing whitespace
+match Todo /\s\+$/
+
 "sanity
 set tabstop=4
 set softtabstop=4
