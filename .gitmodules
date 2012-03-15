@@ -28,6 +28,3 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
-[submodule ".vim/bundle/repmo"]
-	path = .vim/bundle/repmo
-	url = https://github.com/vim-scripts/repmo.vim
