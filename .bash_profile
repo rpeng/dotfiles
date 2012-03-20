@@ -10,9 +10,8 @@ PS1='\[\e[0;35m\]\u@:\[\e[1;36m\]\w\[\e[m\]$(__git_ps1 " (\[\e[1;33m\]%s\[\e[m\]
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
-source ~/workspace/dotfiles/bin/git-completion.bash
-
 export PATH=/Users/richard.peng/workspace/binaries/mongodb-osx-x86_64-2.0.2/bin:$PATH
+export NOSE_REDNOSE=1
 
 # this is a dev machine
 export HULU_ENV='dev'
