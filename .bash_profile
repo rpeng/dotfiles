@@ -12,6 +12,7 @@ PS1='\[\e[0;35m\]\u@:\[\e[1;36m\]\w\[\e[m\]$(__git_ps1 " (\[\e[1;33m\]%s\[\e[m\]
 
 export PATH=/Users/richard.peng/workspace/binaries/mongodb-osx-x86_64-2.0.2/bin:$PATH
 export NOSE_REDNOSE=1
+export PYTHONDONTWRITEBYTECODE=1
 
 # this is a dev machine
 export HULU_ENV='dev'
