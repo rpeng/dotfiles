@@ -28,3 +28,9 @@
 [submodule ".vim/bundle/nerdtree"]
 	path = .vim/bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule ".vim/bundle/pythoncomplete"]
+	path = .vim/bundle/pythoncomplete
+	url = https://github.com/vim-scripts/pythoncomplete
+[submodule ".vim/bundle/mako"]
+	path = .vim/bundle/mako
+	url = https://github.com/sophacles/vim-bundle-mako
