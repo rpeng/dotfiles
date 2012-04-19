@@ -21,6 +21,7 @@ export HULU_ENV='dev'
 alias vi='mvim -v'
 alias ls='ls -G'
 alias lsal='ls -al'
+alias ..='cd ..'
 
 # allow CTRL-S to work for command-t
 stty -ixon
