@@ -79,6 +79,10 @@ endif
 " highlight trailing whitespace
 match Todo /\s\+$/
 
+" ctags
+set tags+=~/.vim/tags/tags
+set tags+=./tags
+
 "sanity
 set tabstop=4
 set softtabstop=4

@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/mako"]
 	path = .vim/bundle/mako
 	url = https://github.com/sophacles/vim-bundle-mako
+[submodule ".vim/bundle/omnicppcomplete"]
+	path = .vim/bundle/omnicppcomplete
+	url = https://github.com/vim-scripts/OmniCppComplete
