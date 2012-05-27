@@ -2,6 +2,10 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+"make
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
 "terminal stuff
 set ttimeoutlen=50
 if &term =~ "xterm" || &term =~ "screen"
@@ -40,7 +44,7 @@ set ignorecase smartcase "by default ignore case
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 "numbers
-set nu!
+set number
 set ruler
 
 " Mappings
@@ -80,8 +84,24 @@ endif
 match Todo /\s\+$/
 
 " ctags
+
+function GenerateTags()
+    call system('ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .')
+endfunction
+
+function SetupCtags()
+    call GenerateTags()
+    map <leader>1 :call system('ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .')<cr>
+    autocmd BufWrite * call GenerateTags()
+endfunction
+
 set tags+=~/.vim/tags/tags
 set tags+=./tags
+autocmd FileType cpp call SetupCtags()
+
+"omnicpp
+
+let OmniCpp_DisplayMode = 1
 
 "sanity
 set tabstop=4
