@@ -54,11 +54,12 @@ noremap <leader>m :set ttymouse=xterm2<cr>
 "taglist
 noremap <leader>f :TlistToggle<cr>
 
-"tasklist
-noremap <leader>l <Plug>TaskList
-
 "NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+
+"Sessions
+nnoremap <leader>s :mksession<cr>
+nnoremap <leader>l :source Session.vim<cr>
 
 let TList_WinWidth=35
 
@@ -113,3 +114,6 @@ set expandtab
 set wildmode=longest:full
 
 set wildmenu
+
+"color
+set t_Co=256
