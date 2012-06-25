@@ -86,19 +86,21 @@ match Todo /\s\+$/
 
 " ctags
 
+
 function GenerateTags()
     call system('ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .')
 endfunction
 
 function SetupCtags()
     call GenerateTags()
-    map <leader>1 :call system('ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .')<cr>
     autocmd BufWrite * call GenerateTags()
 endfunction
 
+map <leader>1 :call GenerateTags()
+
 set tags+=~/.vim/tags/tags
 set tags+=./tags
-autocmd FileType cpp call SetupCtags()
+"autocmd FileType cpp call SetupCtags()
 
 "omnicpp
 
