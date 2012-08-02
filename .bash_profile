@@ -23,6 +23,7 @@ alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -al'
 alias ..='cd ..'
+
 function ql(){ qlmanage -p "$@" >/dev/null 2>&1 ;}
 
 # allow CTRL-S to work for command-t
@@ -30,3 +31,14 @@ stty -ixon
 
 # use vi to edit shell cmds
 set -o vi
+
+# fiz :)
+function f {
+    ~/workspace/fiz/fiz
+    CURRENT_FIZDIR=`pwd`
+    if [ -f ./.fizpath ]
+    then
+        . .fizpath
+        rm $CURRENT_FIZDIR/.fizpath
+    fi
+}

@@ -26,6 +26,9 @@ set mouse=a
 
 syntax on
 
+"show cursor line
+set cursorline
+
 "window movement
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
@@ -36,6 +39,9 @@ noremap <c-h> <c-w>h
 filetype indent plugin on
 
 color inkpot
+
+"scons
+au BufNewFile,BufRead SCons* set filetype=scons
 
 "search options
 set hlsearch    "highlights search
@@ -96,11 +102,15 @@ function SetupCtags()
     autocmd BufWrite * call GenerateTags()
 endfunction
 
-map <leader>1 :call GenerateTags()
+map <leader>1 :call GenerateTags()<cr>
 
 set tags+=~/.vim/tags/tags
 set tags+=./tags
 "autocmd FileType cpp call SetupCtags()
+
+"cursor shape on iterm
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 "omnicpp
 
