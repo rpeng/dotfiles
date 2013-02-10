@@ -88,7 +88,7 @@ if has("gui_running")
 endif
 
 " highlight trailing whitespace
-match Todo /\s\+$/
+" match Todo /\s\+$/
 
 " ctags
 
@@ -116,6 +116,9 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 let OmniCpp_DisplayMode = 1
 
+"conque
+let g:ConqueTerm_StartMessages = 0
+
 "sanity
 set tabstop=4
 set softtabstop=4
@@ -126,6 +129,9 @@ set expandtab
 set wildmode=longest:full
 
 set wildmenu
+
+"parenthesis
+highlight MatchParen cterm=bold ctermbg=red ctermfg=white
 
 "color
 set t_Co=256
