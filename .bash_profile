@@ -15,9 +15,8 @@ alias ll='ls -l'
 alias la='ls -al'
 alias ..='cd ..'
 
-function ql(){ qlmanage -p "$@" >/dev/null 2>&1 ;}
-
 export PATH=$PATH:~/bin
+export EDITOR=vi
 
 # allow CTRL-S to work for command-t
 stty -ixon

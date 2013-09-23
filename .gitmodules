@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/scons"]
 	path = .vim/bundle/scons
 	url = https://github.com/vim-scripts/scons.vim
+[submodule ".vim/bundle/notes"]
+	path = .vim/bundle/notes
+	url = https://github.com/xolox/vim-notes
