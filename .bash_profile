@@ -9,7 +9,6 @@ __git_ps1 ()
 PS1='\[\e[0;35m\]\u@:\[\e[1;36m\]\w\[\e[m\]$(__git_ps1 " (\[\e[1;33m\]%s\[\e[m\])")\$ '
 
 # use MacVim instead of default
-alias vi='mvim -v'
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ls -al'
