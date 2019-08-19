@@ -1,30 +1,32 @@
 " Vundle
 
+set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Personal plugins
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'xolox/vim-session'
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-signature'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'benmills/vimux'
-Bundle 'c9s/bufexplorer'
-"Bundle 'lukaszb/vim-web-indent'
-Bundle 'majutsushi/tagbar'
-"Bundle 'joonty/vdebug'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'xolox/vim-session'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-signature'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'benmills/vimux'
+Plugin 'c9s/bufexplorer'
+"Plugin 'lukaszb/vim-web-indent'
+Plugin 'majutsushi/tagbar'
+"Plugin 'joonty/vdebug'
 
+call vundle#end()
 filetype plugin indent on
 
 nmap <F8> :TagbarToggle<CR>
